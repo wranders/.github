@@ -15,12 +15,12 @@ body:
   attributes:
     label: Description
     description: "Please give a brief description of the feature/enchancement you owuld like to be added"
-  validation:
+  validations:
     required: true
 - type: textarea
   id: additional-information
   attributes:
     label: Additional Information
     description: "Please include additional details here (ie. links, screenshots, Gists, etc.)"
-  validation:
+  validations:
     required: false
