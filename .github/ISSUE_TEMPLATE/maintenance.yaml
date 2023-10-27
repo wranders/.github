@@ -1,0 +1,27 @@
+name: Maintenance Request
+description: Request a maintenance task. This is for non-source files such as README or Github Actions workflows.
+title: "[MAINT]: "
+labels:
+- enhancement
+- maintenance
+assignees:
+- wranders
+body:
+- type: markdown
+  attributes:
+    value: |
+      Please make sure a similar request does not already exist by looking through other open/closed issues with the `enhancement` and `maintenance labels.
+- type: textarea
+  id: description
+  attributes:
+    label: Description
+    description: "Please give a brief description of the maintenance action you would like to perform"
+  validations:
+    required: true
+- type: textarea
+  id: additional-information
+  attributes:
+    label: Additional Information
+    description: "Please include additional details here (ie. links, screenshots, Gists, etc.)"
+  validations:
+    required: false
